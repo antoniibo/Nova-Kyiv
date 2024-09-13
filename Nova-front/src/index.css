@@ -1,0 +1,181 @@
+:root {
+  --textSize: 25px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --mainTextColor: rgb(0, 0, 0);
+  --lightTextColor: rgb(255, 255, 255);
+  --backgroundColor: rgb(255, 255, 255);
+  --specialColor:rgb(42, 41, 41);
+  --hoverColor:rgb(247, 127, 21);
+  --lightHoverColor:rgb(246, 170, 103);
+  --dotsSliderColor:rgba(255, 255, 255, 0.5);
+  --dotsSliderActiveColor:rgba(255, 255, 255, 0.9);
+  --generalGap:10px
+}
+
+html {
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0;
+  background-color: var(--backgroundColor);
+  margin: auto;
+  color: var(--textColor);
+  max-width: 1400px;
+  font-size: var(--textSize);
+  overflow-x: hidden;
+}
+ul,li,details,summary,a{
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  color: inherit;
+}
+a, button, header summary, nav li,.category aside label{
+  transition: transform 0.3s ease-in-out;
+  z-index: 2;
+}
+
+a:hover, button:hover,header summary:hover, nav li:hover,.category aside label:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  color:var(--hoverColor);
+  z-index: 2;
+}
+svg{
+  font-size: calc(0.8*var(--textSize));
+}
+.svg-linker {
+  transform-origin: center;
+  transform: rotate(-45deg);
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+a:hover .svg-linker{
+  transform: rotate(0);
+  animation: way 1s ease-in-out;
+}
+
+@keyframes way {
+  0% {
+    transform: rotate(-45deg);
+  }
+  25% {
+    transform: rotate(0deg) translateX(0);
+  }
+  40% {
+    transform: translateX(-25%);
+  }
+  60% {
+    transform: translateX(5%);
+  }
+  80% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+button{
+  font-family: inherit;
+  cursor: pointer;
+}
+.curency{
+  font-size: calc(1.2*var(--textSize));
+}
+
+summary:hover .more-svg{
+  animation: shake 0.5s ease-in-out;
+  transform-origin: left;
+}
+
+@keyframes shake{
+  0%,100%{
+    transform: rotate(0);
+  }
+  20%{
+    transform: rotate(12deg);
+  }
+  40%{
+    transform: rotate(-12deg);
+  }
+  60%{
+    transform: rotate(6deg);
+  }
+  80%{
+    transform: rotate(-6deg);
+  }
+}
+details[open] .more-svg{
+  animation: down 0.3s ease-in-out;
+  transform-origin: center;
+  transform: rotate(90deg);
+}
+@keyframes down{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(90deg);
+  }
+}
+.success{
+  text-align: center;
+}
+button:hover .click{
+  animation: click 0.5s ease-in-out;
+  transform: translateX(0);
+}
+@keyframes click{
+  0%, 100%{
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(-25%);
+  }
+  50%{
+    transform: translateX(10%);
+  }
+  75%{
+    transform: translateX(-5%);
+  }
+}
+@media only screen and (max-width: 1425px) {
+  
+  body{
+    margin: 0;
+  }
+  .introduction{
+    border-radius: 0;
+  }
+  .recommendations, .bento{
+    padding: 20px 5px;
+  }
+  :root{
+    --textSize:22px
+  }
+  .about main, .about aside, .item, .second-row p,  header, .searchbar{
+    padding: 0 5px;
+  }
+  .fisrt-row{
+    padding: 20px 5px 0px 5px;
+  }
+  .filter-box{
+    right: 5px;
+  }
+  .category-content{
+    padding: 10px 5px;
+  }
+}
+@media only screen and (max-width:1050px) {
+  
+}

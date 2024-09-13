@@ -1,0 +1,114 @@
+.recommendations{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sub-section{
+    position: relative;
+    
+    /* gap: 20px; */
+}
+.sub-section p{
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+.sub-section h2{
+    padding-bottom: var(--generalGap);
+    font-weight: bold;
+}
+.items{
+    display: flex;
+    overflow-y: auto;
+    gap: 20px;
+}
+.prev-box{
+    overflow: hidden;
+    min-width: 300px;
+    /* transform: transform 0.3 ease-in-out; */
+}
+.prev-main{
+    background-color: #cccccc;
+    height: 100vh; 
+    max-height: 450px;
+    overflow: hidden;
+    margin-bottom: var(--generalGap);
+}
+.prev-main img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%; 
+    transition: transform 0.3s ease-in-out;
+}
+.prev-main img:hover{
+    cursor: pointer;
+    filter: brightness(80%);
+    transform: scale(1.1);
+}
+.prev-desc{
+    display: flex; 
+}
+.prev-desc li{
+    flex-grow: 1;
+}
+.prev-desc li:first-child{
+    flex: 0 70%;
+}
+.prev-name{
+    font-weight: bold;
+    padding-bottom: var(--generalGap);
+    min-height: 60px;
+}
+.prev-price{
+    text-align: right;
+    font-size: calc(1.5*var(--textSize));
+}
+.prev-alter{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 3px;
+
+    gap: 8px;
+    /* overflow: hidden; */
+}
+.prev-alter img{
+    background-color: #cccccc;
+    border: 2px solid var(--backgroundColor);
+    border-radius: 8px;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease-in-out;
+}
+.prev-alter img:hover{
+    cursor: pointer;
+    filter: brightness(80%);
+    /* transform: scale(1.1); */
+}
+.prev-alter img.active{
+    border: 2px solid black;
+}
+@media only screen and (max-width: 1280px) {
+    .items{
+        padding-bottom: 8px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .prev-box{
+        min-width: 250px;
+    }
+    .prev-main{
+        height: 300px;
+    }
+    .prev-name{
+        min-height: 40px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .to-hide{
+        display: none;
+    }
+}
+

@@ -1,0 +1,209 @@
+/* .lang-mobile{
+    display: none;
+} */
+header{
+    background-color: var(--backgroundColor);
+}
+nav{
+    font-weight: bold;
+    /* font-size: calc(1.15*var(--headersSize)); */
+    height: 85px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul, nav div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+.logo img{
+    height: 60px;
+}
+
+a:hover .search-svg{
+    animation: search 1.5s ease-in-out;
+}
+@keyframes search{
+    0%, 100% {
+        transform: translate(0, 0) scale(1) rotate(0);
+    }
+    33% {
+        transform: translate(-5px, 5px) scale(0.9) rotate(-5deg);
+    }
+    66% {
+        transform: translate(-5px, -5px) scale(1.1) rotate(5deg);
+    }
+}
+.cart-counter{
+    font-size: calc(0.7*var(--textSize));
+    background-color: var(--mainTextColor);
+    color: var(--lightTextColor);
+    width: 11px;
+    height: 11px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+li:hover .cart-counter {
+    background-color: var(--hoverColor);
+    color: var(--mainTextColor);
+}
+.cart-counter.bounce {
+    animation: bounce 0.8s;
+}
+@keyframes bounce {
+    0%, 100% {
+        background-color: var(--mainTextColor);
+    }
+    50% {
+        background-color: var(--hoverColor);
+        color: var(--mainTextColor);
+    }
+}
+li:hover .cart-svg{
+    animation: bag 1.5s ease-in-out;
+    transform-origin: top center;
+
+}
+@keyframes bag{
+    0%,100%{
+        transform: translate(0,0) rotate(0);
+    }
+    20%{
+        transform: translate(-4px,-4px) rotate(4deg);
+    }
+    40%{
+        transform: translate(-4px,-2px) rotate(8deg) scale(1.05);
+    }
+    60%{
+        transform: translate(0px,-4px) rotate(-4deg);
+    }
+    80%{
+        transform: translate(4px,-2px) rotate(-8deg) scale(0.95);
+    }
+}
+
+.lang-wide {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;z-index: 3;
+}
+
+.lang-wide a {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-top: none;
+    font-size: calc(0.8*var(--textSize));
+}
+
+.lang-wide details[open] a {
+    display: block;
+}
+.lang-wide a {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    min-width: 100%;
+    
+    transition: border-color 0.3s ease;
+    background-color: var(--backgroundColor);
+}
+.lang-wide a:hover {
+    background-color: #f1f1f1;
+    border-color: var(--hoverColor);
+    z-index: 3;
+}
+
+.lang-wide details[open] a {
+    border-top: none;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}  
+.burger-menu,.menu,.p-info, .p-lang{
+    display: none;
+}
+@media only screen and (max-width: 1000px) {
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 4;
+    }
+    nav{
+        margin: 0 2px
+    }
+    .logo{
+        position: absolute;
+        left: 50%; /* Зміщує лівий край елемента на середину контейнера */
+    transform: translateX(-50%);
+    }
+    .burger-menu{
+        display: block;
+        border: none;
+        background-color: var(--backgroundColor);
+    }
+    .left{
+        position: absolute;
+        justify-content: flex-start;
+        background-color: var(--backgroundColor);
+        flex-direction: column;
+        text-align: left;
+        height: 100vh;
+        top: 0;
+        transform: translateX(-150%);
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        width: 230px; 
+        margin-left: -20px;
+        z-index: 4;
+        padding: 0 20px;
+        overflow-y: auto;
+        
+    }
+    .menu{
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+    .menu button{
+        border: none;
+        background-color: var(--backgroundColor);
+    }
+    .nav-categories{
+        flex-direction: column;
+        /* border-top: 1px solid #ccc; */
+        /* padding-top: 10px; */
+    }
+    .left li{
+        padding: 0 20px;
+    }
+    .left.open{
+        transform: translateX(0);
+    }
+    .disappear{
+        display: none;
+    }
+    .p-info{
+        display:flex;
+        padding: 10px 0;
+        border-top: 1px solid #ccc;
+        flex-direction: column;
+    }
+    .lang-wide{
+        display: none;
+    }
+    .p-lang {
+        display: flex;
+        justify-content: center;
+        gap: 0;
+        text-align: center;
+    }
+    .p-lang a{
+        border:  1px solid #ccc;
+        padding: 5px;
+        min-width: 37.2px;
+    }
+}

@@ -1,0 +1,320 @@
+[
+    {
+        "id": 0,
+        "category": 1,
+        "popular": true,
+        "date": "2024-07-11",
+        "header": "Фломастер",
+        "photos": [
+            "pen.webp",
+            "pen2.webp",
+            "pen3.webp"
+        ],
+        "price": 30,
+        "desc": "Найкращий фломастер у світі",
+        "addstaff":[ 
+            "Складові: пластик 100%",
+            "Зроблений в Україні"
+        ],
+        "size": {
+            "R": { "remainder": 20 }
+        }
+    },
+    {
+        "id": 9,
+        "category": 0,
+        "popular": true,
+        "date": "2024-07-21",
+        "header": "Кофтинка",
+        "photos": [
+           "koala.webp",
+           "koala2.webp",
+           "koala3.webp"
+        ],
+        "price": 300,
+        "desc": "Найкраща кофтинка у світі",
+        "addstaff":[ 
+            "Складові: бавовна 100%",
+            "Зроблений в Україні"
+        ],
+        "size": {
+            "S": { "remainder": 20 },
+            "M": { "remainder": 20 },
+            "L": { "remainder": 20 },
+            "XL": { "remainder": 20 }
+        }
+    },
+    {
+        "id": 2,
+        "category": 2,
+        "popular": true,
+        "date": "2024-07-23",
+        "header": "Свічка",
+        "photos": [
+           "monkey.webp",
+           "monkey2.webp",
+           "monkey3.webp"
+        ],
+        "price": 55,
+        "desc": "Найкраща свічка у світі",
+        "addstaff":[ 
+            "Складові: віск 90%, фетиль 10%",
+            "Зроблений в Україні"
+        ],
+        "size": {
+            "R": { "remainder": 20 }
+        }
+    },
+    {
+        "id": 3,
+        "category": 3,
+        "popular": true,
+        "date": "2024-07-10",
+        "header": "Книжка \"Київ навесні\"",
+        "photos": [
+           "card.webp",
+           "card2.webp",
+           "card3.webp"
+        ],
+        "price": 200,
+        "desc": "Найкраща книжка у світі",
+        "addstaff":[ 
+            "Складові: перероблений папір 100%",
+            "Зроблений в Україні"
+        ],
+        "size": {
+            "R": { "remainder": 20 }
+        }
+    },
+    {
+        "id": 4,
+        "category": 4,
+        "popular": false,
+        "date": "2024-07-20",
+        "header": "Подарунковий сертифікат 200",
+        "photos": [
+           "giftCard.webp"
+           
+        ],
+        "price": 200,
+        "desc": "Гарний варіянт для всіх, хто не знає, що дарувати",
+        "addstaff":[ 
+            "Складові: перероблений папір 100%",
+            "Зроблений в Україні"
+        ],
+        "size": {
+            "R": { "remainder": 20 }
+        }
+    },
+    {
+        "id": 5,
+        "category": 4,
+        "popular": true,
+        "date": "2024-07-19",
+        "header": "Подарунковий сертифікат 500",
+        "photos": [
+           "giftCard.webp"
+        ],
+        "price": 500,
+        "desc": "Гарний варіянт для всіх, хто не знає, що дарувати",
+        "addstaff":[ 
+            "Складові: перероблений папір 100%",
+            "Зроблений в Україні"
+        ],
+        "size": {
+            "R": { "remainder": 20 }
+        }
+    },
+    {
+        "id": 6,
+        "category": 4,
+        "popular": false,
+        "date": "2024-07-18",
+        "header": "Подарунковий сертифікат 1000",
+        "photos": [
+           "giftCard.webp"
+        ],
+        "price": 1000,
+        "desc": "Гарний варіянт для всіх, хто не знає, що дарувати",
+        "addstaff":[ 
+            "Складові: перероблений папір 100%",
+            "Зроблений в Україні"
+        ],
+        "size": {
+            "R": { "remainder": 20 }
+        }
+    },
+    {
+        "id": 7,
+        "category": 1,
+        "popular": false,
+        "date": "2024-07-17",
+        "header": "Ручка-коала",
+        "photos": [
+           "koala.webp",
+           "koala2.webp",
+           "koala3.webp"
+        ],
+        "price": 25,
+        "desc": "Найкраща ручка у світі",
+        "addstaff":[ 
+            "Складові: пластик 100%",
+            "Зроблений в Україні"
+        ],
+        "size": {
+            "R": { "remainder": 20 }
+        }
+    },
+    {
+        "id": 8,
+        "category": 1,
+        "popular": true,
+        "date": "2024-07-16",
+        "header": "Ножиці",
+        "photos": [
+           "pen.webp",
+           "pen2.webp",
+           "pen3.webp"
+        ],
+        "price": 50,
+        "desc": "Найкращі ножиці у світі",
+        "addstaff":[ 
+            "Складові: метал 80% пластик 20%",
+            "Зроблений в Україні"
+        ],
+        "size": {
+            "R": { "remainder": 20 }
+        }
+    },
+    {
+        "id": 1,
+        "category": 0,
+        "popular": true,
+        "date": "2024-07-15",
+        "header": "Окуляри",
+        "photos": [
+           "glasses.webp",
+           "glasses2.webp",
+           "glasses3.webp"
+        ],
+        "price": 120,
+        "desc": "Найкращі окуляри у світі",
+        "addstaff":[ 
+            "Складові: пластик 100%",
+            "Зроблений в Україні"
+        ],
+        "size": {
+            "S": { "remainder": 20 },
+            "R": { "remainder": 20 }
+        }
+    },
+    {
+        "id": 10,
+        "category": 0,
+        "popular": false,
+        "date": "2024-07-14",
+        "header": "Футболка",
+        "photos": [
+           "tocobo.webp",
+           "tocobo2.webp",
+           "tocobo3.webp"
+        ],
+        "price": 100,
+        "desc": "Найкраща футболка у світі",
+        "addstaff":[ 
+            "Складові: бавовна 100%",
+            "Зроблений в Україні"
+        ],
+        "size": {
+            "S": { "remainder": 20 },
+            "M": { "remainder": 20 },
+            "L": { "remainder": 0 },
+            "XL": { "remainder": 20 }
+        }
+    },
+    {
+        "id": 11,
+        "category": 2,
+        "popular": true,
+        "date": "2024-07-13",
+        "header": "Статуетка",
+        "photos": [
+           "monkey.webp",
+           "monkey2.webp",
+           "monkey3.webp"
+        ],
+        "price": 300,
+        "desc": "Найкраща статуетка у світі",
+        "addstaff":[ 
+            "Складові: камінь 100%",
+            "Зроблений в Україні"
+        ],
+        "size": {
+            "R": { "remainder": 0 }
+        }
+    },
+    {
+        "id": 12,
+        "category": 2,
+        "popular": true,
+        "date": "2024-07-24",
+        "header": "Склянка",
+        "photos": [
+           "cactus.webp",
+           "cactus2.webp",
+           "cactus3.webp"
+        ],
+        "price": 210,
+        "desc": "Найкраща склянка у світі",
+        "addstaff":[ 
+            "Складові: скло 100%",
+            "Зроблений в Україні"
+        ],
+        "size": {
+            "R": { "remainder": 20 }
+        }
+    },
+    {
+        "id": 13,
+        "category": 3,
+        "popular": true,
+        "date": "2024-07-25",
+        "header": "Книжка \"Вечір\"",
+        "photos": [
+           "tocobo.webp",
+           "tocobo2.webp",
+           "tocobo3.webp"
+        ],
+        "price": 120,
+        "desc": "Найкраща книжка у світі",
+        "addstaff":[ 
+            "Складові: перероблений папір 100%",
+            "Зроблений в Україні"
+        ],
+        "size": {
+            "R": { "remainder": 20 }
+        }
+    },
+    {
+        "id": 14,
+        "category": 3,
+        "popular": true,
+        "date": "2024-07-12",
+        "header": "Книжка \"Ранок\"",
+        "photos": [
+           "card.webp",
+           "card2.webp",
+           "card3.webp"
+        ],
+        "price": 150,
+        "desc": "Найкраща книжка у світі",
+        "addstaff":[ 
+            "Складові: перероблений папір 100%",
+            "Зроблений в Україні"
+        ],
+        "size": {
+            "R": { "remainder": 0 }
+        }
+    }
+    
+]

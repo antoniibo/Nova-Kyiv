@@ -1,0 +1,141 @@
+.newssub{
+    background-color: var(--specialColor);
+    color: var(--lightTextColor);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
+}
+.newssub p, .newssub form{
+    flex-grow: 1;
+}
+.newssub form{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+}
+.newssub button{
+    background-color: var(--specialColor);
+    color: var(--lightTextColor);
+    border: 2px solid var(--lightTextColor);
+    padding: 5px 10px;
+    text-align: center;
+}
+.newssub input{
+    height: 25px;
+    border: 0px;
+    width: 80%;
+    padding: 5px 10px;
+}
+.newssub p svg{
+    rotate: 90deg;
+}
+.newssub button:hover{
+    color:var(--specialColor);
+    background-color: var(--lightTextColor);
+}
+
+.fisrt-row{
+    padding: 20px 0;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.fisrt-row div{
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+.fisrt-row h4{
+    padding-bottom: 15px;
+}
+.information, .contacts, .schedule{
+    flex: 0 0 15%;
+    font-size: calc( 0.8*var(--textSize));
+}
+.information ul, .contacts ul, .schedule ul{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.logo-footer{
+    flex: 0 0 28%;
+    text-align: center;
+    height: 250px;
+}
+.logo-footer img{
+    max-height: 150px;
+}
+.social{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    
+}
+.social svg{
+    padding: 5px;
+    font-size: calc( 1.2*var(--textSize));
+}
+.second-row{
+    display: flex;
+    padding: 20px;
+}
+.second-row p, .second-row ul{
+    flex: 0 0 33%
+}
+.copyright{
+    text-align: end;
+}
+.second-row ul{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0.7;
+}
+.second-row ul svg{
+    font-size: calc( 1.2*var(--textSize));
+}
+.second-row p{
+    font-size: calc( 0.8*var(--textSize));
+}
+@media only screen and (max-width: 895px) {
+    .newssub{
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+    .newssub form{
+        width: 100%;
+        justify-content: center;
+    }
+    .newssub input{
+        width: 100%;
+        max-width:350px;
+        
+    }
+    .logo-footer{
+        order: 4;
+    }
+    .fisrt-row{
+        /* text-align: center; */
+        padding-bottom: 0;
+    }
+
+}
+@media only screen and (max-width: 670px) {
+    .fisrt-row{
+        flex-direction: column;
+        text-align: center;
+    }
+    .fisrt-row div{
+        flex-basis: auto;
+    }
+    .second-row{
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .second-row ul svg{
+        padding: 10px 0 ;
+    }
+}
